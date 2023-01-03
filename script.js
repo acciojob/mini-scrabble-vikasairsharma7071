@@ -1,12 +1,11 @@
-//your code here
 let str = document.getElementById("evaluatedText");
 
 let mess = document.getElementById("letterCount");
 
 function check(){
     let val = str.value;
-    let valLength = val.length+1;
+    let valLength = val.length;
     mess.innerHTML = valLength; 
 }
 
-str.addEventListener("keypress",check);
+str.addEventListener("keyup",check);
